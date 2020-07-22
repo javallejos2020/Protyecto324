@@ -5,6 +5,7 @@ if (isset($_SESSION['usuario']))
 	$nom=$_SESSION['usuario'];
 }
 include "conexion.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +32,7 @@ include "conexion.php";
 			</tr>
 			<?php
 			$sql="SELECT * FROM reserva";
-			$result=mysqli_query($con,$sql);
+			$result=mysqli_query($conn,$sql);
 			while ($col=mysqli_fetch_array($result) ) {
 				echo '<tr>';
 				echo '<td>'.$col[0].'</td>'.'<td>'.$col[1].'</td>'.'<td>'.$col[2].'</td>';
