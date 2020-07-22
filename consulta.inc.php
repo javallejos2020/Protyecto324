@@ -5,6 +5,7 @@ if (isset($_SESSION['usuario']))
 	$nom=$_SESSION['usuario'];
 }
 include "conexion.php";
+
 ?>
 
 <!DOCTYPE html>
