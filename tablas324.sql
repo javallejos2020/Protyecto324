@@ -122,12 +122,16 @@ codRol varchar(2),
 pantalla varchar(20)
 );
 
+
+
 create table procesoCon (
 codFlujo varchar(2),
 codProceso varchar(3),
 codProcesoSi varchar(3),
 codProcesoNo varchar(3)
 );
+
+
 
 -------bandeja de entrada------
 --// seguimiento
@@ -143,9 +147,17 @@ codUsuario varchar(2),
 
 
 
+insert into proceso  values ('F1','P1','P2','I','E','averigua.php');
+insert into proceso  values ('F1','P2','P3','P','E','presentarse.php');
+insert into proceso  values ('F1','P3','null','C','K','validarfecha.php');
+insert into proceso  values ('F1','P4','null','C','K','validarnuevo.php');
+insert into proceso  values ('F1','P6','P7','C','K','registrardatos.php');
+insert into proceso  values ('F1','P7','P8','P','N','registrarvaloracion.php');
+insert into proceso  values ('F1','P8','P9','F','U','historial.php');
 
 
-
+insert into procesoCon values('F1','P3','P4','P5');
+insert into procesoCon values('F1','P4','P7','P6');
 
 
 
