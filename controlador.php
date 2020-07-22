@@ -1,5 +1,5 @@
 <?php
- include "conexion.inc.php";
+ include "conexion.php";
 $codFlujo=$_GET["codflujo"];
 $codProceso=$_GET["codproceso"];
 $codProcesoSiguiente=$_GET["codprocesosiguiente"];
