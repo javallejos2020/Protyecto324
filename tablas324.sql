@@ -114,8 +114,8 @@ base de datos= flujo
 --------FLUJO----------
 --// proceso
 create table proceso (
-codProceso varchar(3),
 codFlujo varchar(2),
+codProceso varchar(3),
 codProcesoSiguiente varchar(3),
 tipo varchar(2),
 codRol varchar(2),
@@ -131,6 +131,17 @@ codProcesoSi varchar(3),
 codProcesoNo varchar(3)
 );
 
+insert into proceso  values ('F1','P1','P2','I','E','averigua.php');
+insert into proceso  values ('F1','P2','P3','P','E','presentarse.php');
+insert into proceso  values ('F1','P3',null,'C','K','validarfecha.php');
+insert into proceso  values ('F1','P4',null,'C','K','validarnuevo.php');
+insert into proceso  values ('F1','P6','P7','C','K','registrardatos.php');
+insert into proceso  values ('F1','P7','P8','P','N','registrarvaloracion.php');
+insert into proceso  values ('F1','P8','P9','F','U','historial.php');
+
+
+insert into procesoCon values('F1','P3','P4','P5');
+insert into procesoCon values('F1','P4','P7','P6');
 
 
 -------bandeja de entrada------
@@ -147,17 +158,6 @@ codUsuario varchar(2),
 
 
 
-insert into proceso  values ('F1','P1','P2','I','E','averigua.php');
-insert into proceso  values ('F1','P2','P3','P','E','presentarse.php');
-insert into proceso  values ('F1','P3','null','C','K','validarfecha.php');
-insert into proceso  values ('F1','P4','null','C','K','validarnuevo.php');
-insert into proceso  values ('F1','P6','P7','C','K','registrardatos.php');
-insert into proceso  values ('F1','P7','P8','P','N','registrarvaloracion.php');
-insert into proceso  values ('F1','P8','P9','F','U','historial.php');
-
-
-insert into procesoCon values('F1','P3','P4','P5');
-insert into procesoCon values('F1','P4','P7','P6');
 
 
 
