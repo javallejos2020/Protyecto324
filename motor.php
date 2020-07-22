@@ -2,7 +2,7 @@
 <?php
 $codFlujo=$_GET["codflujo"];
 $codProceso=$_GET["codproceso"];
-include "conexion.inc.php";
+include "conexion.php";
 $sql="select * from proceso where codFlujo='$codFlujo' and codproceso='$codProceso'";
 $result=mysqli_query($conn, $sql);
 $fila=mysqli_fetch_array($result);
