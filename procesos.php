@@ -1,29 +1,26 @@
 <?php 
-  if ($codProceso=='P8') { 
+if ($codProceso=='P8') { 
   ?>
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
   <form action="" method="POST">
 
-  <table>
-  <tr>
-  <th>CI:</th>
-  <td><input type="text" name="ci" required></td>
-  <td><input type="submit" name="ver" required></td>
-  </tr>
-  </table>
+    <table>
+      <tr>
+        <th>CI:</th>
+        <td><input type="text" name="ci" required></td>
+        <td><input type="submit" name="ver" required></td>
+      </tr>
+    </table>
   </form>
   <?php 
-  }
-  ?>
+}
+?>
 
 <?php 
 if ($codProceso=='P3') {
   ?>
   <form action="" method="POST">
-  <table>
-      <tr><th>CI :</th>
-        <td><input type="text" name="ci" required></td>
-      </tr>
+    <table>
       <tr>
         <td>
           <select name="facultad">
@@ -52,21 +49,21 @@ if ($codProceso=='P3') {
       </table>
 
       
-      </form>
+    </form>
 
-<?php 
+    <?php 
   }
   if ($codProceso=='P4'):
-  ?>
-  <form  action="" method="POST">
-  <table>
-  <tr>
-  <th>CI:</th>
-  <td><input type="text" name="ci" required></td>
-  <td><input type="submit" name="envia" required></td>
-  </tr>
-  </table>
-  </form>
+    ?>
+    <form  action="" method="POST">
+      <table>
+        <tr>
+          <th>CI:</th>
+          <td><input type="text" name="ci" required></td>
+          <td><input type="submit" name="envia" required></td>
+        </tr>
+      </table>
+    </form>
 
   <?php endif ?>
   
@@ -74,32 +71,46 @@ if ($codProceso=='P3') {
   
   <?php 
   if ($codProceso=='P6') { 
-  ?>
-  <form method="post">
+    ?>
+    <form method="post">
     	<h1>Registrar Nuevo</h1>
     	<input type="text" name="nombre" placeholder="Nombre">
     	<input type="text" name="apellidos" placeholder="Apellidos">
-		<input type="text" name="ci" placeholder="Carnet de Identidad">
-		<input type="text" name="facultad" placeholder="Facultad">
-		<input type="text" name="carrera" placeholder="Carrera">
-    	<input type="submit" name="register" required>
+      <input type="text" name="ci" placeholder="Carnet de Identidad">
+      <input type="text" name="facultad" placeholder="Facultad">
+      <input type="text" name="carrera" placeholder="Carrera">
+      <input type="submit" name="register" required>
     </form>
-  <?php 
+    <?php 
   }
   ?>
   
   <?php 
   if ($codProceso=='P7') { 
-  ?>
- <form method="post">
+    ?>
+    <form method="post">
     	<h1>Registrar Valoracion</h1>
-		<input type="text" name="ci" placeholder="Carnet de Identidad">
-		<input type="text" name="peso" placeholder="Peso">
-		<input type="text" name="talla" placeholder="Talla">
-		<input type="text" name="estado" placeholder="Estado">
-    	<input type="submit" name="register">
-    </form>
-  <?php 
-  }
-  ?>
-  
+      <table>
+        <tr>
+          <th>CI :</th>
+          <td><input type="text" name="ci" placeholder="Carnet de Identidad"></td>
+        </tr>
+        <tr>
+          <th>Peso:</th>
+          <td><input type="text" name="peso" placeholder="Peso"></td>
+          <th>Talla:</th>
+          <td><input type="text" name="talla" placeholder="Talla"></td>
+          <th>Estado:</th>
+          <td><input type="text" name="estado" placeholder="Estado"></td>
+        </tr>
+        <tr>
+          <td colspan="6">
+           <input type="submit" name="register"> 
+         </td>
+       </tr>
+     </table>
+   </form>
+   <?php 
+ }
+ ?>
+ 
