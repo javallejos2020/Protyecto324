@@ -18,7 +18,7 @@ table{
 	margin: auto auto auto;
 }
 table th{
-	border-right:  4px solid;
+	/*border-right:  4px solid;*/
 	text-align: right;
 }
 table,tr,td {
